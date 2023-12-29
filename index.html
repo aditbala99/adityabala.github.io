@@ -1,0 +1,613 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Dimension by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			#jobTitle {
+				font-size: 20px; /* Adjust the font size as needed */
+				font-family: 'Arial', sans-serif; /* Choose a suitable font family */
+				transition: opacity 0.5s ease-in-out; /* Adjust the transition properties as needed */
+				opacity: 1; /* Initial opacity */
+			}
+		</style>
+		
+		
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<header id="header">
+					<div class="logo">
+						<span class="icon fa-gem"></span>
+					</div>
+					<div class="content">
+						<div class="inner">
+							<h1>Aditya Bala</h1>
+							<div>
+								<span id="jobTitle">A Data Scientist</span>
+							</div>
+							<div>
+								Explore a small sample of my journey in the world of data-driven innovation.
+							</div>
+							<!-- Navigation Links -->
+							<nav>
+								<ul>
+									<li><a href="#about">About</a></li>
+									<li><a href="#work">Work</a></li>
+									<li><a href="#projects">Projects</a></li>
+									<li><a href="#contact">Contact</a></li>
+									<!-- <li><a href="#elements">Elements</a></li> -->
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</header>
+
+				<script>
+					function changeTitle() {
+						const titles = ["Machine Learning Engineer", "AI Engineer","Data Analyst", "Gen-AI Engineer","Data Scientist"];
+						const titleElement = document.getElementById("jobTitle");
+				
+						let index = 0;
+				
+						// Function to update the title with a new one
+						function updateTitle() {
+							titleElement.style.opacity = 0; // Start fading out
+							setTimeout(() => {
+								titleElement.textContent = titles[index];
+								titleElement.style.opacity = 1; // Start fading in
+								index = (index + 1) % titles.length;
+							}, 500); // Adjust the delay for smoother transitions
+						}
+				
+						// Update the title every 2 seconds (adjust the interval as needed)
+						setInterval(updateTitle, 2000);
+					}
+				
+					// Call the function to start changing the title
+					changeTitle();
+				</script>
+				
+				
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- About -->
+							<article id="about">
+								<h2 class="major">About</h2>
+								<span class="image main"><img src="images\collage.jpg" alt="" /></span>
+								<p>
+									I am currently in the final semester of my graduate program at Boston University, actively pursuing career opportunities as an ML/AI Engineer, Data Scientist/Analyst, or Gen AI Engineer. My academic journey has been a transformative experience, providing me with invaluable hands-on exposure to the realm of Data Science. My primary focus lies within the domains of Data Science, Machine Learning, Big Data and Generative AI, particularly Large Language Models (LLMs).
+								</p>
+								<div class="skills">
+									<h3 class="major">Qualifications</h3>
+									<ul>
+										<li>Master's degree in Data Analytics with a focus on Machine Learning.</li>
+										<li>Proficient in programming languages: Python, R, C, C++, PySpark, NoSQL & SQL.</li>
+										<li>Extensive knowledge of machine learning frameworks: TensorFlow, PyTorch, etc.</li>
+										<li>Experience in feature engineering and model building and evaluation techniques.</li>
+										<li>Familiarity with big data processing tools: Hadoop, Spark, AWS, GCP.</li>
+										<li>Understanding of deep learning architectures and techniques.</li>
+										<li>Strong problem-solving skills for effective project management.</li>
+										<li>Excellent communication and collaboration skills.</li>
+										<li>Self-motivated with a strong desire for continuous learning and growth.</li>
+									</ul>
+									<h3 class="major">Key Skills</h3>
+									<ul>
+										<li>Model Building</li>
+										<li>LLM fine-tuning</li>
+										<li>Big Data Analysis</li>
+										<li>Data Pre-processing</li>
+										<li>SQL and Database Management</li>
+										<li>Google Cloud Platform (GCP)</li>
+										<li>Amazon Web Services (AWS)</li>
+										<li>Natural Language Processing (NLP)</li>
+										<li>Computer Vision</li>
+										<li>Feature Extraction / Embedding</li>
+										<li>Data Visualization</li>
+										<li>Generative AI</li>
+									</ul>
+									<h3 class="major">Programming Skills</h3>
+									<ul>
+										<li>Python</li>
+										<li>R</li>
+										<li>PySpark</li>
+										<li>SQL</li>
+										<li>NoSQL</li>
+										<li>C</li>
+										<li>C++</li>
+									</ul>
+									<h3 class="major">Software Proficiency</h3>
+									<ul>
+										<li>Jupyter</li>
+										<li>TensorFlow</li>
+										<li>Docker</li>
+										<li>Matlab</li>
+										<li>Hugging Face</li>
+										<li>Tableau</li>
+										<li>PowerBI</li>
+										<li>SAS</li>
+										<li>Pandas / NumPy / SciPy / Keras</li>
+										<li>MongoDB</li>
+										<li>PySpark</li>
+										<li>Hadoop</li>
+										<li>Apache Spark</li>
+										<li>Oogabooga</li>
+										<li>ComfyAi</li>
+									</ul>
+								</div>
+							</article>
+						
+
+						<!-- Projects -->
+							<article id="projects">
+								<h2 class="major">Projects</h2>
+								<!-- Project 1 -->
+								<div class="project">
+									<a href="https://github.com/aditbala99/Medical-Classification-Chatbot-using-Random-Forest-SVM-BERT-and-LLMs">
+										<h3>1. Medical Chatbot: Model Building, GCP & LLMs <span style="font-size: smaller">(Click here)</span></h3>
+									</a>
+									
+										<span class="image main"><img src="images\chatbot.jpeg" alt="Project 1 Image" alt="" /></span>
+									</a>
+									<p>Utilized NLP preprocessing techniques to construct a classification model (Random Forest, SVM and BERT) for extracting medical insights from a question-answer dataset using PySpark on Google Cloud Platform (GCP). Improved the chatbot with LLM API integration - Llama2, incorporating the trained model for real-time medical classification. Developed the chatbot for symptom analysis, data queries using Tokenization, and automated appointment scheduling.</p>
+								</div>
+
+								<!-- Project 2 -->
+								<div class="project">
+									<a href="https://github.com/aditbala99/Lip-reading-using-CNN-and-tensorflow">
+										<h3>2. Lip Reading: TensorFlow & CNN <span style="font-size: smaller">(Click here)</span></h3>
+									</a>
+									
+										<span class="image main"><img src="images\TF.png" alt="Project 3 Image" alt="" /></span>
+									</a>
+									<p>This lip reading project has equipped me with valuable insights into utilizing Convolutional Neural Networks (CNNs) and advanced deep learning techniques like Bidirectional LSTMs and CTC loss for decoding spoken words from lip movements. The project covered key aspects, including data preprocessing with TensorFlow, building an efficient data pipeline, and training a model to accurately predict and translate lip movements into text. The integration of CNNs facilitated robust feature extraction, while Bidirectional LSTMs enhanced the model's understanding of temporal dependencies in sequential data. The use of the CTC loss function showcased its effectiveness in handling sequence-to-sequence tasks, making this project a practical exploration of lip reading using cutting-edge deep learning approaches.</p>
+								</div>
+
+								<!-- Project 3 -->
+								<div class="project">
+									<a href="https://github.com/aditbala99/Recidivism-Predication/tree/main">
+										<h3>3. Recidivism Prediction: Model Building & Feature Extraction <span style="font-size: smaller">(Click here)</span></h3>
+									</a>
+									
+										<span class="image main"><img src="images\cmp.jpg" alt="Project 3 Image" alt="" /></span>
+									</a>
+									<p>Obtained practical experience in machine learning techniques, including data preprocessing, feature selection, model selection, and evaluation, using the R programming language. This project further developed my proficiency in training machine learning models, improving data quality through cleaning, and understanding the strengths and limitations of different classification algorithms. It also highlighted the significance of feature selection in machine learning and the potential impact of attribute selection techniques on model performance. The project's hands-on approach allowed me to gain valuable insights into the machine learning process and its applications in various domains.</p>
+								</div>
+
+								<!-- Project 4 -->
+								<div class="project">
+									<a href="https://github.com/aditbala99/GoogleCloud_Pyspark">
+										<h3>4. Taxi-Data Analysis: Pyspark & GCP <span style="font-size: smaller">(Click here)</span></h3>
+									</a>
+									
+										<span class="image main"><img src="images\GCP.png" alt="Project 4 Image" alt="" /></span>
+									</a>
+									<p>Gained hands-on experience in Data Analysis using PySpark and Google Cloud Platform, with a focus on taxi data. This project enhanced my skills in big data processing, data cleaning, statistical analysis and data visualization.I gained hands-on experience in data analysis using PySpark and Google Cloud Platform, with a focus on taxi data. This project enhanced my skills in big data processing, data cleaning, statistical analysis, and data visualization.</p>
+								</div>
+								<!-- Add more projects in a similar manner -->
+							</article>
+
+
+
+
+						<!-- Work -->
+							<article id="work">
+								<h2 class="major">Work</h2>
+
+								<!-- Work 1: Gen-AI Data Science Intern -->
+								<div class="work">
+									<h3>1. Gen-AI Data Science Intern</h3>
+									<span class="image main"><img src="images\LLMs.png" alt="Work 1 Image" alt="" /></span>
+
+									<h4 class="larger-font">Accomplishments:</h4>
+									<ul>
+										<li>Language Model Development:
+											<ul>
+												<li>Created and Fine-Tuned a scalable and resource-efficient local language model using the Oobabooga framework.</li>
+												<li>Extended its capabilities using LORAs and agents to incorporate other open-source language models, including Orca, Vicuna, and Llama 2, using LoRAs.</li>
+											</ul>
+										</li>
+										<li>AI Chatbot for Healthcare:
+											<ul>
+												<li>Developed a customized AI chatbot for a hospital using Python, Google APIs, and OpenAI APIs.</li>
+												<li>The chatbot performed various tasks, such as scheduling doctor appointments, retrieving patient reports, and fetching product/medicine information from the hospital's database.</li>
+												<li>The implementation led to improved customer experience and a significant increase in hospital revenue.</li>
+											</ul>
+										</li>
+										<li>Speech-to-Text with Conformer Model:
+											<ul>
+												<li>Implemented the Conformer model by AssemblyAI to accurately convert voice and speech into text.</li>
+												<li>Designed a ComfyUI framework for embedding and leveraging Large Language Models (LLMs) to automatically fill forms with text outputs from the Conformer model.</li>
+											</ul>
+										</li>
+										<li>Mental Disorder Prediction Model:
+											<ul>
+												<li>Developed a Recurrent Neural Network (RNN) model using patient data to predict the type of mental disorder based on patient feedback.</li>
+												<li>Achieved an impressive accuracy rate of 73%, which is a notable contribution to the field of mental health diagnosis.</li>
+											</ul>
+										</li>
+									</ul>
+
+									<h4 class="larger-font">Key Learnings:</h4>
+									<ul>
+										<li>Advanced NLP Skills:
+											<ul>
+												<li>Gained expertise in building and fine-tuning language models, including resource optimization and integration with existing models.</li>
+												<li>Acquired practical knowledge of using NLP for real-world applications.</li>
+											</ul>
+										</li>
+										<li>AI Application in Healthcare:
+											<ul>
+												<li>Learned to create AI solutions tailored to the healthcare industry, resulting in tangible benefits such as improved customer experience and increased revenue.</li>
+											</ul>
+										</li>
+										<li>Speech Recognition and Text Completion:
+											<ul>
+												<li>Gained proficiency in speech-to-text conversion using the Conformer model.</li>
+												<li>Developed a framework for automating text completion, demonstrating skills in user interface design and integration.</li>
+											</ul>
+										</li>
+										<li>Data Analysis and Predictive Modeling:
+											<ul>
+												<li>Successfully built a predictive model for mental disorder diagnosis, highlighting expertise in data analysis and machine learning.</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+
+								<!-- Work 2: Research Assistant -->
+								<div class="work">
+									<a href="https://github.com/aditbala99/Creativity-Measure" target="_blank">
+										<h3>2. Research Assistant <span style="font-size: smaller">(Click here)</span></h3>
+									</a>
+									
+										<span class="image main"><img src="images\KNN-Algorithm.png" alt="Work 2 Image" alt="" /></span>
+									</a>
+								
+									<h4 class="larger-font">Accomplishments:</h4>
+									<ul>
+										<li>Novelty Detection in Art:
+											<ul>
+												<li>Leveraged advanced embeddings, such as Facebook's DINO and Imagebind, to process an extensive art dataset and convert it into vectorized representations.</li>
+												<li>Utilized these embeddings to encode the unique characteristics of art pieces, enabling a numerical representation of their visual attributes.</li>
+											</ul>
+										</li>
+										<li>Art Classification Using KNN:
+											<ul>
+												<li>Implemented the K-Nearest Neighbors (KNN) algorithm, a crucial tool for art classification and novelty detection.</li>
+												<li>Utilized KNN to classify artworks into two categories: human-created and AI-generated.</li>
+											</ul>
+										</li>
+										<li>Surprise and Novelty Detection:
+											<ul>
+												<li>Developed a robust model that relied on the KNN algorithm to classify art pieces based on their origin.</li>
+												<li>The primary objective of the model was to detect novelty and surprise in artworks, effectively distinguishing between human-made and AI-generated art.</li>
+											</ul>
+										</li>
+										<li>Impressive Classification Results:
+											<ul>
+												<li>Achieved a remarkable accuracy rate of 90% when assessing the surprise and novelty scores of artworks, allowing for precise differentiation between human-made and AI-generated art.</li>
+												<li>These outcomes underscored the model's efficacy in discerning the unique qualities of human artistry and AI-generated creations.</li>
+											</ul>
+										</li>
+									</ul>
+
+									<h4 class="larger-font">Key Learnings:</h4>
+									<ul>
+										<li>Artistic Novelty Assessment:
+											<ul>
+												<li>Gained a deep understanding of how to evaluate novelty and authenticity in artworks, especially in distinguishing between those crafted by human artists and those generated by AI algorithms.</li>
+											</ul>
+										</li>
+										<li>Embeddings for Art Analysis:
+											<ul>
+												<li>Acquired expertise in the use of advanced embeddings to represent artistic creations as numerical vectors, enabling in-depth analysis and classification.</li>
+											</ul>
+										</li>
+										<li>K-Nearest Neighbors (KNN) for Art Classification:
+											<ul>
+												<li>Developed a solid foundation in the principles of the KNN algorithm for art classification and novelty detection, a crucial aspect of this project.</li>
+											</ul>
+										</li>
+										<li>Data Science and Machine Learning Skills:
+											<ul>
+												<li>Enhanced proficiency in data preprocessing, feature extraction, and machine learning model development within the domain of art analysis.</li>
+												<li>Gained insights into the complexities and nuances of working with diverse art datasets.</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</article>
+
+
+						<!-- Contact -->
+						<article id="contact">
+							<h2 class="major">Contact</h2>
+							
+							<div class="contact-info">
+								<p class="contact-item"><strong>Email:</strong> <a href="mailto:aditya26@bu.edu">aditya26@bu.edu</a></p>
+								<p class="contact-item"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/adityaab/" target="_blank">Aditya's LinkedIn</a></p>
+								<p class="contact-item"><strong>GitHub:</strong> <a href="https://github.com/aditbala99" target="_blank">Aditya's GitHub</a></p>
+								<p class="contact-item"><strong>Phone:</strong> <a href="tel:+18577990828">+1 (857) 799-0828</a></p>
+							</div>
+						</article>
+
+
+
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright"> Data Vizualization|Model Tuning|Hypothesis Testing|NLP|Computer Vision|Predictive Modeling|LLM</a></p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
